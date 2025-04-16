@@ -1,0 +1,121 @@
+body{
+    background-image: radial-gradient(circle at 50% -20.71%, #a6ffa7 0, #90ffab 12.5%, #76ffb0 25%, #54ffb5 37.5%, #08ffbb 50%, #00fbc2 62.5%, #00f8ca 75%, #00f4d3 87.5%, #00f1dc 100%);
+    background-color: aliceblue;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+form{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 50px 35px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 380px;
+}
+
+form h2{
+    font-size: 35px;
+    color: #0d0d0d;
+    margin: 0;
+}
+
+form p{
+    font-size: 16px;
+    color: #5e5e5e;
+    margin-bottom: 35px;
+
+}
+
+.input-wrapper{
+    position: relative;
+    width: 305px;
+    margin-bottom: 35px;
+}
+
+input{
+    color: #0d0d0d;
+    padding: 20px 15px 20px 60px;
+    width: 100%;
+    border-radius: 25px;
+    border: 0;
+    box-shadow: 0 0 20px rgba(192, 203, 251, 0.7);
+    outline: none;
+    font-size: 16px;
+}
+
+input::placeholder{
+    font-size: 16px;
+    color: #BBBEB2;
+}
+
+.input-icon {
+     position: absolute;
+     height: 30px;
+     width: 30px;
+     left: 20px;
+     top: 32px;
+     transform: translateY(-55%);
+}
+
+.btn{
+    padding: 20px;
+    background: linear-gradient(
+        90deg, 
+        rgba(140, 43, 231, 1) 25%,
+        rgba(61, 1, 245, 1) 90%);
+
+    box-shadow: 0 0 20px rgba(192, 203, 251, 0.7);
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: rgb(153, 47, 252);
+}
+
+.success{
+    position: absolute;
+    top: 50px;
+    color: #00c83c;
+    font-size: 18px;
+}
+
+.error{
+    background-color: rgb(175, 72, 72);
+    color: black;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+@media(max-width:991px){
+    body{
+        padding: 10px;
+    }
+    form{
+        padding: 20px;
+        width: 100%;
+    }
+    .input-wrapper{
+        position: relative;
+        width: 88%;
+        margin-bottom: 35px;
+    }
+    input{
+        padding: 20px 0px 20px 45px;
+    }
+    .input-icon{
+        height: 20px;
+        width: 20px;
+    }
+}

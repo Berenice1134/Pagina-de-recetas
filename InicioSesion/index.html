@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="post" action="login.php">
+        <h2>Iniciar Sesión</h2>
+        <div class="input-wrapper">
+            <input type="email" name="email" placeholder="Email" required>
+            <img class="input-icon" src="images/email.svg" alt="">
+        </div>
+        <div class="input-wrapper">
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <img class="input-icon" src="images/password.svg" alt="">
+        </div>
+        <input class="btn" type="submit" value="Iniciar Sesión">
+         <p>¿No tienes una cuenta? 
+            <a href="http://localhost:8080/Registro/" class="nav__links">Registrate </a>
+    </form>
+</body>
+</html>
